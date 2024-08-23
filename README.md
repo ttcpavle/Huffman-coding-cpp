@@ -13,4 +13,4 @@ Size of header may be large for smaller files but for larger files, it will not 
 Not everything is exactly the same as in Standfords assignment in pdf (see below).
 
 ## Sources
-This project was based on Standfords assignment (huffman.pdf in this repo) which is publically available. I didn't use any external resources from standfords library. Here is link to pdf: https://web.stanford.edu/class/archive/cs/cs106b/cs106b.1176/assnFiles/assign6/huffman-encoding-supplement.pdf
+This project was based on Standfords assignment (huffman.pdf in this repo) which is publically available. I didn't use any external resources from standfords library. Here is link to pdf: https://web.stanford.edu/class/archive/cs/cs106b/cs106b.1178/assn/huffman.pdf
