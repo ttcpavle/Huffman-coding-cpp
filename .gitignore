@@ -1,0 +1,4 @@
+# ignore changes to build, renders and objects
+HuffmanCoding/build/*
+!HuffmanCoding/build/.keep
+HuffmanCoding/includes/config.h # this is auto generated from config.h.in
