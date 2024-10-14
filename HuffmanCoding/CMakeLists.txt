@@ -8,18 +8,14 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 set(INPUT_FILES "${CMAKE_CURRENT_SOURCE_DIR}/input")
 set(OUTPUT_FILES "${CMAKE_CURRENT_SOURCE_DIR}/output")
 
-# Kopirati jedan fajl sa jedne lokacije, transformisati ga i preabciti na drugu
 configure_file(${CMAKE_CURRENT_SOURCE_DIR}/includes/config.h.in ${CMAKE_CURRENT_SOURCE_DIR}/includes/config.h)
 
-# Korisiti zadati direktorijum za predragu .h fajlova
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/includes)
 
-# Source files
 set(SOURCES
     src/main.cpp
 )
 
-# Header files (not needed in add_executable, kept for organization)
 set(HEADER_FILES
     includes/HuffmanCoding.h
     includes/config.h

@@ -224,9 +224,5 @@ void decompress(ifstream& input, ostream& output) {
 	freeTree(root);
 }
 
-//void compressionReport(const string& original, const string& compressed) {
-//	
-//}
-
 #endif
 
