@@ -1,8 +1,19 @@
 # Huffman-coding
 This program can compress and decompress textual file using huffman binary tree. Compressed file can be aroud 30%-50% smaller in size.
 ## How it works
-Textual data (from file) is analyzed and table with characters and their frequencies (how many times they appear) is created. That table is used to create huffman binary tree (minimized weight tree). Tree is used to find encoding for each character (no code is prefix of another). Frequencie table is written as header in binary file and than encoded text (bitstream) is written. Here is structure for compressed file: 
-![Screenshot 2024-08-22 134043](https://github.com/user-attachments/assets/e212fbe6-fbb3-4051-bcc3-1083a43cec8a)
+
+Textual data (from file) is analyzed and table with characters and their frequencies (how many times they appear) is created. That table is used to create huffman binary tree (minimized weight tree). Tree is used to find encoding for each character (no code is prefix of another).
+<div align="center">
+ <br>
+    <img src="https://github.com/user-attachments/assets/2dce8bcc-fab4-4f82-a048-34e1d8848a0f" alt="huffman coding visually">
+</div>
+Frequencie table is written as header in binary file and than encoded text (bitstream) is written. Here is structure for compressed file: 
+
+<div align="center">
+ <br>
+    <img src="https://github.com/user-attachments/assets/e212fbe6-fbb3-4051-bcc3-1083a43cec8a" alt="huffman coding visually">
+ <br>
+</div>
 
 - Blue is used to mark elements of table (char and unsigned short int).
 - Red is HEADER_END byte (0xFE in this case). When it is reached, reading of header stops.
@@ -31,5 +42,6 @@ Required software: <br>
 Cmake installation: https://www.youtube.com/watch?v=8_X5Iq9niDE <br>
 Git installation: https://www.youtube.com/watch?v=JgOs70Y7jew <br>
 </p>
+
 ## Sources
-This project was based on Standfords assignment (huffman.pdf in this repo) which is publically available. I didn't use any external resources from standfords library. Here is link to pdf: https://web.stanford.edu/class/archive/cs/cs106b/cs106b.1178/assn/huffman.pdf
+This project was based on Stanfords assignment (huffman.pdf in this repo) which is publically available. I didn't use any external resources from Stanfords library. Here is link to pdf: https://web.stanford.edu/class/archive/cs/cs106b/cs106b.1178/assn/huffman.pdf
